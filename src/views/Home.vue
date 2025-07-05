@@ -16,7 +16,9 @@
           <figure>
             <img :src="recipe.image_url" alt="Recipe image" />
           </figure>
-          <button class="btn">View Recipe</button>
+          <button class="btn">
+            <router-link :to="`/recipe/${recipe.id}`">View Recipe</router-link>
+          </button>
         </div>
       </div>
     </div>
