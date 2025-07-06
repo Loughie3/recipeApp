@@ -1,10 +1,12 @@
 <template>
-  <div>Recipes</div>
-  <div>
-    <p>Name: {{ recipe.title }}</p>
+  <main class="p-20 grid grid-cols-2">
+    <h1>{{ recipe.title }}</h1>
     <p>Ingredients: {{ recipe.ingredients }}</p>
-    <p>Instructions: {{ recipe.instructions }}</p>
-  </div>
+
+    <div>
+      <p>Instructions: {{ recipe.instructions }}</p>
+    </div>
+  </main>
 </template>
 
 <script>
